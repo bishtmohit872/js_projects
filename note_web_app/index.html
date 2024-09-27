@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Happy Notes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolag+Grotesque:opsz@10..48&family=Playfair+Display:ital@1&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body class="theme">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">HAPPY NOTES</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a id="btn_note" class="nav-link active" aria-current="page" href="#">Create Notes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="compitition_link" class="nav-link" aria-current="page" href="#">Compitions Links</a>
+                        </li>
+                        
+                    </ul>
+                    <li class="nav-item mx-2">
+                        <button class="btn btn-primary" id="mode_btn">Dark Mode</a>
+                    </li>
+                    <form class="d-flex" role="search">
+                        
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="jumbo">
+            <h1>Welcome World's Best Notes Maker</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, velit veniam. Necessitatibus a fugit enim
+                optio impedit aperiam dolor dolores quam, quibusdam ipsam odio eius nam adipisci soluta tenetur nisi
+                obcaecati culpa laborum velit explicabo perspiciatis. Facilis nobis temporibus voluptatem!
+            </p>
+            
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Title for Note</label>
+                <input type="text" class="form-control" id="title" placeholder="Write Your title here">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Your Note</label>
+                <textarea class="form-control" id="note" placeholder="Write your note here" rows="3"></textarea>
+            </div>
+
+            <button id="create_note">Create Note</button>
+            <button id="del_note">Delete Note</button>
+            <button id="clear_note">Clear All Note</button>
+        </div>
+
+        <div id="card_notes" class="cards">
+                
+        </div>
+
+    </main>
+
+
+
+
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:ital,wght@0,300;1,400&family=Libre+Baskerville:wght@700&family=Montserrat&family=Mukta:wght@700&family=Noto+Sans:ital,wght@0,400;1,100;1,400;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <div id="main">
+        <h1>TEXT <span><img src="../img/arrow-right-line.png"></span>Emoji</h1>
+        <div id="endec-div">
+            <h3 id="enc-btn"><span><img src="../img/lock-line.png">Encryption</span></h3>
+            <h3 id="dec-btn"><span><img src="../img/lock-unlock-line.png">Decryption</span></h3>
+        </div>
+
+        <div id="encryption">
+            <h5>Type message here</h5>
+            <textarea name="" id="txtmsg" cols="30" rows="80" placeholder="Write your message here!"></textarea>
+
+            <h5>Type a Password</h5>
+            <input type="password" name="" id="password" placeholder="Type Your Password Here">
+
+            <button id="encrypt-btn"><span><i class="ri-lock-line"></i></span>Encrypt Text</button>
+        </div>
+
+        <div id="decryption">
+            <h5>Paste Encrypted Emoji Here!</h5>
+            <textarea name="" id="emojimsg" cols="30" rows="80" placeholder="Paste here!"></textarea>
+
+            <h5>Type Password</h5>
+            <input type="password" name="" id="final_password" placeholder="Type Password Here">
+
+            <button id="decrypt-btn"><span><i class="ri-lock-unlock-line"></i></span>Decrypt Emoji</button>
+        </div>
+
+        <div id="result">
+            
+        </div>
+    </div>
+</body>
+
+</html>

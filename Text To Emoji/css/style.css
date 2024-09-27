@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(2, 2, 2, 0.858);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#main>h1 {
+    font-size: 45px;
+    display: flex;
+    align-items: center;
+}
+
+#main>h1 span {
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+#main>h1 span img {
+    width: 90%;
+    filter: invert(100%);
+    transition: 0.8s ease;
+    /* transform: rotate(90deg);  */
+}
+
+#main>#endec-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgba(255, 255, 255, 0.152); */
+    border-radius: 6px;
+    margin: 10px;
+    padding: 4px 2px;
+    width: 25%;
+}
+
+#main>#endec-div h3 {
+    font-size: 20px;
+    margin: 10px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /* padding:12px 10px; */
+
+
+}
+
+#endec-div h3 span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#endec-div h3 span img {
+    filter: invert(100%);
+}
+
+#enc-btn {
+    height: 90%;
+    width: 100%;
+    padding: 4px 4px;
+    background-color: rgba(255, 255, 255, 0.26);
+    border-radius: 6px;
+}
+
+#dec-btn
+{
+    height: 90%;
+    width: 100%;
+    padding:4px 4px;
+    
+    border-radius: 6px;
+}
+
+#encryption {
+    width: 45%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    /* display: none; */
+
+}
+
+#encryption h5 {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    opacity: 0.8;
+}
+
+#encryption textarea {
+    width: 100%;
+    height: 90px;
+    border: 1px solid rgba(81, 74, 74, 0.414);
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 17px;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.382);
+    margin-top: 10px;
+    margin-bottom: 50px;
+
+}
+
+#encryption input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgba(81, 74, 74, 0.414);
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 17px;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.382);
+    margin-top: 10px;
+    margin-bottom: 50px;
+
+}
+
+#encryption button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.348);
+    color: rgba(215, 208, 208, 0.9);
+    border: none;
+    width: 100%;
+    height: 40px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#encryption button span {
+    margin-right: 10px;
+}
+
+
+#decryption {
+    width: 45%;
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    
+}
+
+#decryption h5 {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    opacity: 0.8;
+}
+
+#decryption textarea {
+    width: 100%;
+    height: 90px;
+    border: 1px solid rgba(81, 74, 74, 0.414);
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 17px;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.382);
+    margin-top: 10px;
+    margin-bottom: 50px;
+
+}
+
+#decryption input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgba(81, 74, 74, 0.414);
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 17px;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.382);
+    margin-top: 10px;
+    margin-bottom: 50px;
+
+}
+
+#decryption button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.348);
+    color: rgba(215, 208, 208, 0.9);
+    border: none;
+    width: 100%;
+    height: 40px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#decryption button span {
+    margin-right: 10px;
+}
+
+#result
+{
+    padding:20px;
+    border-radius: 10px;
+    color:white;
+    font-size: 18px;
+    background-color: #1C1C1C;
+    border:1px solid #343434;
+    width:45%;
+    margin-top: 40px;
+    display:none;
+}
+
+
+
+@media only screen and (max-width:500px)
+{
+    #main{
+        width: 100%;
+    }
+
+    /* #endec-div>h3{
+        padding:2px 20px;
+        
+    } */
+    #endec-div>h3>span
+    {
+        font-size: 16px;
+    }
+
+}

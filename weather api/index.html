@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"
+        integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="js/script.js" defer></script>
+
+</head>
+
+<body>
+    <div id="main">
+
+        <div id="nav">
+            <h1>Weather Report</h1>
+        </div>
+
+        <!-- <div id="cursor"></div> -->
+
+        <div id="part1">
+
+            <div id="menus">
+                <div class="menu"><button>Country</button></div>
+                <div class="menu"><button>Latitude</button></div>
+                <div class="menu"><button>Longitude</button></div>
+                <div class="menu"><button>Name</button></div>
+                <div class="menu"><button>Reigon</button></div>
+                <div class="menu"><button>TimeZone_Id</button></div>
+            </div>
+             
+            <div id="box">
+
+                <div id="intro">
+                    <h2>Hey!, What's Up...</h2>
+                    <h2>Click Here to see Today's Weather</h2>
+                </div>
+
+                <div id="options">
+                    
+                </div>
+
+                <button id="btn">Weather Report</button>
+            </div>
+
+            <div id="info">
+                <div id="top">
+
+                    <div id="left">
+                        <img id="weather_image" src="" alt="">
+                        
+                        <div id="data">
+                            <label id="location">Location:</label> <span><label id="location_name">Location_name</label></span>
+                        </div>
+                    </div>
+
+                    <div id="right">
+                        <label>Celcius : <span><label id="celcius" class="information"></label></span></label>
+                        <label>Fahreneit : <span><label id="Fahrenheit" class="information"></label></span></label>
+                        <label>KPH : <span><label id="kph" class="information"></label></span></label>
+                        <label>MPH : <span><label id="mph" class="information"></label></span></label>
+                        <label>Humidity : <span><label id="Humidity" class="information"></label></span></label>
+                        <label>Last Update : <span><label id="Last_update" class="information"></label></span></label>
+                        <label>Wind KPH : <span><label id="wind_kph" class="information"></label></span></label>
+                        <label>Wind MPH : <span><label id="wind_mph" class="information"></label></span></label>
+                    </div>
+
+                </div>
+
+                <div id="bottom">
+                    <!-- <label for="" id="location">Location:</label><span><label for="" id="location_name">Finding....</label></span> -->
+                    hello world
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

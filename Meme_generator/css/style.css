@@ -1,0 +1,72 @@
+/* :root{
+    --font-family:"Roboto",sans-serif;
+} */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    font-size: 1.6em;
+}
+.meme-generator
+{
+    display:flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    border:2px solid red;
+    height: 2000px;
+    text-align: center;
+    align-items: center;
+}
+
+.meme-generator>.action>.generate-meme-btn
+{
+    padding:20px;
+    margin:20px auto;
+    background-color: rgb(65, 134, 238);
+    color:white;
+    border-right:20px solid rgb(2, 11, 24);
+    border-left:20px solid rgb(2, 11, 24);
+    border-radius:15px;
+    cursor:pointer;
+    transition:all;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+   
+}
+
+.meme-generator>.generate-meme-btn:hover
+{
+    transform:scale(1.2);
+    letter-spacing: 10px;
+}
+
+.meme-generator>.display
+{
+    display:flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 90%;
+    width: 40%;
+    border:2px solid green;
+}
+
+.meme-generator>.display>.meme-title
+{
+    font-size: 1em;
+}
+
+.meme-generator>.display>img
+{
+    height: 80%;
+    width: 60%;
+    margin:30px auto;
+    /* padding:30px; */
+    border:2px solid rgb(14, 19, 14);
+    /* object-fit: cover; */
+}
+.meme-generator>.display>.meme-author{
+    font-size:0.9em;
+}
+
